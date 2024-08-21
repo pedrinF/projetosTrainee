@@ -1,0 +1,170 @@
+body{
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 787px;
+    height: 362px;
+    border-radius: 20px;
+    position: relative;
+}
+.main-div{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-content: center;
+    width: 559px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px; 
+}
+.side-image{
+    width: 200px;
+    height: 362px;
+    border: 5px;
+    border-radius: 20px, 0px, 20px, 0px;
+    background-image: url('card.svg');
+    background-repeat: no-repeat;
+}
+
+.text-div{
+    width: Fixed (600px);
+    height: Fixed (362px);
+    border-radius: 20px;
+}
+.text-div h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text-div p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.socials-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: Fixed (185px);
+    height: Hug (48px);
+    gap: 5px;
+}
+
+.contact-div h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.data{
+    display: flex;
+}
+.data p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.share-button{
+    position: relative;
+}
+#share-list{
+    
+    display: none;
+    gap: 8px;
+    width: auto;
+    background: #CCDBCB;
+    justify-content: center;
+    position: absolute;
+    bottom: 80px;
+    left: 310px;
+    border-radius: 20px;
+}
+
+#share-list div{
+    display: flex;
+    width: 154px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#share-list li{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    
+}
+#share-list li a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+button{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    gap: 10px;
+    background: #CCDBCB;
+    border: none;
+}
+@media (max-width: 787px){
+    main{
+        flex-direction: column;
+        width: 358px;
+        height: 589px;
+    }
+    #share-list{
+        position: absolute;
+        left: 90px;
+    }
+    .main-div{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 175px;
+    }
+    .side-image{
+        width: 358px;
+        height: 200px;
+        background-image: url('card\ banner.svg');
+    }
+}
+@media (min-width: 787px){
+    .main-div{
+        position: absolute;
+        right: 30px;
+    }
+}
